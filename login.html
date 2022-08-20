@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>About Me</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="styles.css">
+     <link rel="icon" href="images/logoname.png" type="image/icon type">
+ </head>
+ <body>
+     <header>
+         <nav class="wrapper">
+            <img src="images/logoname.png" alt="Taiwo Akerele Logo" class="logo">
+            <div class="hamburger">
+                <div class="mylinks" id="myLinks">
+                    <a href="index.html" class="mylink">Home</a>
+                    <a href="contact.html" class="mylink">Contact</a>
+                    <a href="registration.html" class="mylink">Registration</a>
+                    <a href="login.html" class="mylink">Login</a>
+                </div>
+                <div class="hamburgers">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+            <ul class="home">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            <ul class="leftside">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="registration.html">Registration</a></li>
+            </ul>
+            <a href="login.html"><input type="button" class="login" name="login" value="Login"> </a>
+         </nav>
+    </header>
+    <main class="login-wrapper">
+        <form action="" method="get" class="login-container">
+            <input id="email" type="email" name="email" placeholder="Email" maxlength="40" required>
+            <input id="password" type="password" name="password" placeholder="Password" maxlength="30" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+          <input type="submit" name="submit" value="Sign In" class="signin">
+        </form> 
+     </main>
+     <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+     </script>
+ </body>
+</html>
